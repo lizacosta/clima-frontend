@@ -11,15 +11,15 @@ import {MatButtonModule} from "@angular/material/button"
 
 
 @Component({
-  selector: 'app-menubar',
-  templateUrl: './menubar.component.html',
-  styleUrls: ['./menubar.component.css'],
+  selector: 'app-navebar',
+  templateUrl: './navebar.component.html',
+  styleUrls: ['./navebar.component.css'],
   standalone:true,
   imports :[ MatToolbarModule, MatIconModule,
     MatMenuModule,
     MatSidenavModule, MatListModule, RouterOutlet, MatBadgeModule, MatButtonModule ]
 })
-export class MenubarComponent {
+export class NaveBarComponent {
   badgevisible = false;
   badgevisibility() {
     this.badgevisible = true;
