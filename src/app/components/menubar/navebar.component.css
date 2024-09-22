@@ -3,12 +3,10 @@
   }
   .tema-dark {
     background-color: #282A36;
-  }
-
-  .dark{
-    background-color:   #44475A;
-  }
-
-  .color-main{
     color: #F8F8F2;
   }
+  .dark{
+    background-color:  #44475A;
+  }
+
+  
