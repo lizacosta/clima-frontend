@@ -9,14 +9,16 @@
       <h2 class="segundo-titulo">Crear cuenta</h2>
       <div class="icones-gerais">
         <div class="icones-redes">
-          <span><i class="fa-brands fa-facebook-f"></i></span>
+          <mat-icon class="fa-brands fa-facebook-f">facebook</mat-icon>
+          <!-- <span><i class="fa-brands fa-facebook-f"></i></span> -->
         </div>
         <div class="icones-redes">
-          <span><i class="fa-brands fa-google-plus-g"></i></span>
+          <!-- <span><i class="fa-brands fa-google-plus-g"></i></span> -->
+          <mat-icon svgIcon="google"></mat-icon>
         </div>
-        <div class="icones-redes">
+        <!-- <div class="icones-redes">
           <span><i class="fa-brands fa-linkedin-in"></i></span>
-        </div>
+        </div> -->
       </div>
       <p class="p-titulo2">O registrate con las cuentas de:</p>
       <form class="form" (ngSubmit)="register()" [formGroup]="formulario">

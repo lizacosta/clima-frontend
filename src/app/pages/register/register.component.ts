@@ -2,12 +2,14 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [FormsModule, CommonModule, ReactiveFormsModule],
+  imports: [FormsModule, CommonModule, ReactiveFormsModule, MatIconModule, HttpClientModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css'
 })
@@ -23,9 +25,14 @@ export class RegisterComponent {
 
   constructor(
     private fb: FormBuilder,
-    private route: Router
-  ) {
+    private route: Router,
+    private matIconRegistry: MatIconRegistry,private domSanitizer: DomSanitizer,
     
+  ) {
+    this.matIconRegistry.addSvgIcon(
+      "google",
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../../../assets/imagen/google_icon.svg")
+    );
   }
   ngOnInit(): void {
     this.formulario = this.fb.group({

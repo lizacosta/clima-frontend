@@ -66,11 +66,14 @@
     border-radius: 15px;
     text-transform: uppercase;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .caixa .caixa-login .botao-entrar:hover {
     background-color: #fff;
-    color: #58af9b;
+    color: #44475A;
     cursor: pointer;
   }
   
@@ -111,11 +114,14 @@
     height: 35px;
     line-height: 35px;
     text-align: center;
-    color: #95a5a6;
+    color: #3b5998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .caixa .caixa-login .criar-login .icones-gerais .icones-redes:hover {
-    background: #58af9b;
+    background: #44475A;
     color: #fff;
     cursor: pointer;
   }
@@ -124,6 +130,8 @@
     display: flex;
     flex-direction: column;
     width: 55%;
+    justify-content: center;
+    align-items: center;
   }
   
   
@@ -165,7 +173,7 @@
     border: none;
     margin-top: 1rem;
     background-color: #44475A;
-    border: 1px solid #58af9b;
+    border: 1px solid #44475A;
     border-radius: 15px;
     text-transform: uppercase;
     color: #fff;
@@ -174,8 +182,8 @@
   .caixa .caixa-login .criar-login .form .botao-form:hover {
     cursor: pointer;
     background-color: #fff;
-    border: 1px solid #58af9b;
-    color: #58af9b;
+    border: 1px solid #44475A;
+    color: #44475A;
   }
   
   .caixa .caixa-login-two .form h4 {
